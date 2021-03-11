@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/mainStyle.css" />
+    <script defer src="js/main.js"></script>
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <main class="card">
+      <figure class="bg">
+        <img
+          src="images/bg-pattern.svg"
+          alt="Background-image"
+          class="bg-img"
+        />
+      </figure>
+      <section class="container">
+        <h1 class="heading-1">Simple, traffic-based pricing</h1>
+        <p class="paragraph mt-md">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+        <section class="pricing__box">
+          <!-- change it dynamically -->
+          <span class="pageViews"> 100k Pageviews </span>
+          <div class="pricing">
+            $16
+            <span class="month">/month</span>
+          </div>
+          <div class="slider">
+            <input type="range" name="PriceSelected" class="slider__range" />
+          </div>
+          <div class="billing">
+            <span class="month">Monthly Billing</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <span class="year">Yearly Billing</span>
+            <span class="discount"> 25% discount</span>
+          </div>
+          <div class="feature">
+            <ul class="feature__list">
+              <li class="feature__list--item">Unlimited websites</li>
+              <li class="feature__list--item">100% data ownership</li>
+              <li class="feature__list--item">Email reports</li>
+            </ul>
+            <button class="btn">Start my trial</button>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
+</html>
