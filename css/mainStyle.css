@@ -13,23 +13,34 @@ html {
 }
 
 body {
-  font-family: "Manrope", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
+  /* font-family: "Manrope", sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
   line-height: 1.5;
   display: grid;
   place-items: center;
+  background-color: #333;
   min-height: 100vh;
+}
+
+/* Typography */
+.heading-1 {
+  font-size: 3rem;
+}
+
+.paragraph {
+  color: hsl(225, 20%, 60%);
 }
 
 /* Main */
 .card {
   overflow: hidden;
   position: relative;
-  max-width: 114rem;
+  max-width: 134rem;
   width: 100%;
   height: 70vh;
-  padding: 10rem;
+  padding: 7rem 5rem 10rem;
   background: hsl(230, 100%, 99%);
   border-radius: 1rem;
 }
@@ -37,6 +48,9 @@ body {
 .container {
   position: relative;
   z-index: 5;
+  display: grid;
+  place-items: center;
+  grid-row-gap: 6rem;
 }
 
 .bg {
@@ -44,6 +58,19 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.header {
+  padding: 5rem 0;
+  text-align: center;
+  background: url("../images/pattern-circles.svg") no-repeat center;
+}
+
+.pricing__box {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rm rgba(0, 0, 0, 0.3);
 }
 
 /* footer */
