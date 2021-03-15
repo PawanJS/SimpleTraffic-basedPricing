@@ -281,6 +281,15 @@ input:checked + .toggle:before {
   color: hsl(230, 100%, 99%);
 }
 
+/* Screen reader only */
+.scr-rdr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 0;
+  left: -1000000000px;
+}
+
 /* Media queries */
 @media only screen and (max-width: 37em) {
   body {
