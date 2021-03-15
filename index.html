@@ -43,7 +43,7 @@
             <span class="month js-price">$16</span>
             /month
           </div>
-          <div class="slider">
+          <form class="slider" autocomplete="off">
             <input
               type="range"
               min="20"
@@ -53,13 +53,15 @@
               name="PriceSelected"
               class="slider__range js-slider"
             />
-          </div>
+          </form>
           <div class="billing">
             <span class="billing--month">Monthly Billing</span>
-            <label class="switch ml-sm">
-              <input type="checkbox" />
-              <span class="toggle round"></span>
-            </label>
+            <form autocomplete="off">
+              <label class="switch ml-sm">
+                <input type="checkbox" class="js-toggle" />
+                <span class="toggle round"></span>
+              </label>
+            </form>
             <span class="year ml-sm">Yearly Billing</span>
             <span class="discount ml-sm"> 25% discount</span>
           </div>
@@ -90,7 +92,7 @@
                 Email reports
               </li>
             </ul>
-            <button class="btn">Start my trial</button>
+            <button class="btn js-btn">Start my trial</button>
           </div>
         </section>
       </section>
