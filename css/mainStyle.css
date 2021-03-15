@@ -13,12 +13,12 @@ html {
 }
 
 body {
-  /* font-family: "Manrope", sans-serif; */
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
   display: grid;
+  grid-row-gap: 2rem;
   place-items: center;
   background-color: #333;
   min-height: 100vh;
@@ -42,7 +42,6 @@ body {
   color: #fff;
   padding: 1rem 3rem;
   border-radius: 5rem;
-  font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -129,6 +128,7 @@ body {
 .slider {
   grid-area: 2 / 1 / 3 / -1;
   padding: 0 3rem;
+  width: 100%;
 }
 
 .slider__range {
@@ -221,6 +221,10 @@ input:checked + .toggle:before {
   align-items: center;
 }
 
+.feature__list--item:not(:last-child) {
+  padding-bottom: 0.6rem;
+}
+
 .feature--img {
   display: inline-block;
   margin-right: 1rem;
@@ -228,6 +232,7 @@ input:checked + .toggle:before {
 
 /* footer */
 .attribution {
+  padding: 2rem;
   font-size: 1.8rem;
   text-align: center;
   color: hsl(0, 3%, 88%);
@@ -240,4 +245,67 @@ input:checked + .toggle:before {
 
 .attribution a:hover {
   color: hsl(230, 100%, 99%);
+}
+
+/* Media queries */
+@media only screen and (max-width: 37em) {
+  body {
+    padding: 0rem;
+    min-height: auto;
+  }
+
+  .card {
+    padding: 5rem 3rem;
+  }
+
+  .pricing__box {
+    justify-items: center;
+  }
+
+  .pageViews,
+  .pricing {
+    grid-column: 1 / -1;
+    padding: 0;
+  }
+
+  .pricing {
+    justify-self: unset;
+  }
+
+  .billing {
+    grid-area: 4 / 1 / 5 / -1;
+    justify-self: unset;
+  }
+
+  .feature {
+    flex-direction: column;
+    grid-area: 5 / 1 / 6 / -1;
+  }
+
+  .feature__list {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  .billing {
+    font-size: 1.1rem;
+  }
+
+  .slider,
+  .billing,
+  .feature {
+    padding: 2rem;
+  }
+  body {
+    background-color: hsl(174, 86%, 45%);
+  }
+}
+
+@media only screen and (max-width: 23em) {
+  input:checked + .toggle:before {
+    -webkit-transform: translateX(0.8rem);
+    -ms-transform: translateX(0.8rem);
+    transform: translateX(0.8rem);
+  }
 }
