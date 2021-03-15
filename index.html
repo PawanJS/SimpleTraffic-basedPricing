@@ -36,17 +36,20 @@
         </header>
         <section class="pricing__box">
           <!-- change it dynamically -->
-          <span class="pageViews"> 100k Pageviews </span>
+          <div class="pageViews">
+            <span class="js-pageViews">100k</span> Pageviews
+          </div>
           <div class="pricing">
-            <span class="month">$16</span>
+            <span class="month js-price">$16</span>
             /month
           </div>
           <div class="slider">
             <input
               type="range"
-              min="0"
+              min="20"
               max="100"
               value="60"
+              step="20"
               name="PriceSelected"
               class="slider__range js-slider"
             />
