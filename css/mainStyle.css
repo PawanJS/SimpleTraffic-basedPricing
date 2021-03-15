@@ -17,12 +17,7 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
-  display: grid;
-  grid-row-gap: 2rem;
-  place-items: center;
   background-color: #333;
-  min-height: 100vh;
-  padding: 3rem;
 }
 
 /* Typography */
@@ -64,11 +59,12 @@ body {
 .card {
   overflow: hidden;
   position: relative;
-  max-width: 114rem;
-  width: 100%;
-  padding: 7rem 5rem 10rem;
+  min-height: 100vh;
+  padding: 10rem;
   background: hsl(230, 100%, 99%);
-  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  grid-row-gap: 3rem;
 }
 
 .container {
@@ -84,6 +80,12 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
+  width: 100%;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -269,7 +271,7 @@ input:checked + .toggle:before {
   padding: 2rem;
   font-size: 1.8rem;
   text-align: center;
-  color: hsl(0, 3%, 88%);
+  color: hsl(15, 100%, 70%);
 }
 
 .attribution a {
@@ -278,7 +280,7 @@ input:checked + .toggle:before {
 }
 
 .attribution a:hover {
-  color: hsl(230, 100%, 99%);
+  color: hsl(174, 86%, 45%);
 }
 
 /* Screen reader only */
@@ -292,11 +294,6 @@ input:checked + .toggle:before {
 
 /* Media queries */
 @media only screen and (max-width: 37em) {
-  body {
-    padding: 0rem;
-    min-height: auto;
-  }
-
   .card {
     padding: 5rem 3rem;
   }
