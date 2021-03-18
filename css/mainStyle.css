@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: "Manrope", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
   background-color: #333;
@@ -23,7 +23,7 @@ body {
 /* Typography */
 .heading-1 {
   color: hsl(227, 35%, 25%);
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .paragraph {
@@ -56,6 +56,37 @@ body {
 }
 
 /* Main */
+
+/* Background images */
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.bg--header {
+  position: absolute;
+  top: -2rem;
+  left: 35%;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+.header {
+  padding: 0 0 3rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
 .card {
   overflow: hidden;
   position: relative;
@@ -75,36 +106,17 @@ body {
   grid-row-gap: 6rem;
 }
 
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-}
-
-.bg-img {
-  width: 100%;
-  height: 100%;
-}
-
-.header {
-  padding: 5rem 0;
-  text-align: center;
-  background: url("../images/pattern-circles.svg") no-repeat center;
-}
-
 .pricing__box {
   max-width: 43rem;
   width: 100%;
-  padding: 3rem 0;
+  padding: 3.5rem 0;
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
   display: grid;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 2.5rem;
+  grid-row-gap: 3rem;
   color: hsl(227, 35%, 25%);
 }
 
@@ -122,7 +134,7 @@ body {
 }
 
 .month {
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-right: 0.8rem;
 }
 
