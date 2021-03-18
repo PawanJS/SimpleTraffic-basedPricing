@@ -39,5 +39,5 @@ function refreshPage() {
   window.location.reload();
 }
 
-// Event handlers
+// Event handler
 btn.addEventListener("click", refreshPage);
