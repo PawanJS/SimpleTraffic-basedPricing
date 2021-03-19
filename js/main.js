@@ -1,12 +1,12 @@
 "use strict";
 const slider = document.querySelector(".js-slider");
 const btn = document.querySelector(".js-btn");
+const toggle = document.querySelector(".js-toggle");
 
 // Making slider work
 slider.oninput = function () {
   const pageViews = document.querySelector(".js-pageViews");
   const price = document.querySelector(".js-price");
-  const toggle = document.querySelector(".js-toggle");
 
   function printingPrice(amount) {
     if (toggle.checked) {
@@ -41,3 +41,6 @@ function refreshPage() {
 
 // Event handler
 btn.addEventListener("click", refreshPage);
+toggle.addEventListener("click", function () {
+  slider.oninput();
+});
